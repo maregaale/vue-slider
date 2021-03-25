@@ -35,7 +35,7 @@
         <!-- contenitore immagini e bullets-->
         <div class="img_container">
           <!-- immagine -->
-          <img :src="images[imgIndex]" alt="">
+          <img :src="images[imgIndex]">
           <!-- /immagine -->
 
           <!-- bullets -->
@@ -48,7 +48,7 @@
 
         <!-- freccia avanti -->
         <div class="arrow_container">
-          <i class="fas fa-chevron-right"></i>
+          <i @click="nextImg" class="fas fa-chevron-right"></i>
         </div>
         <!-- /freccia avanti -->
       </div>

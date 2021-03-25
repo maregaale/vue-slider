@@ -11,6 +11,12 @@ const app = new Vue ({
 
   },
   methods: {
+    nextImg: function () {
+      this.imgIndex++;
 
+      if (this.imgIndex == this.images.length) {
+        this.imgIndex = 0;
+      }
+    },
   },
 });
