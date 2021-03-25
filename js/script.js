@@ -28,8 +28,8 @@ const app = new Vue ({
         this.imgIndex = ( this.images.length - 1 );
       }
     },
-
-
-
+    thatIndexThatImg: function (genericIndex) {
+      this.imgIndex = genericIndex;
+    },
   },
 });
