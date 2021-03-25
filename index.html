@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- /foglio di stile -->
   </head>
+
   <body>
 
     <div id="root">
@@ -34,7 +35,7 @@
         <!-- contenitore immagini e bullets-->
         <div class="img_container">
           <!-- immagine -->
-          <img src="img/vespucci.jpg" alt="">
+          <img :src="images[imgIndex]" alt="">
           <!-- /immagine -->
 
           <!-- bullets -->
@@ -50,8 +51,6 @@
           <i class="fas fa-chevron-right"></i>
         </div>
         <!-- /freccia avanti -->
-
-
       </div>
       <!-- /contenitore del carosello -->
     </div>
