@@ -28,8 +28,20 @@ const app = new Vue ({
         this.imgIndex = ( this.images.length - 1 );
       }
     },
+    // corrispondenza bullets-immagini
     thatIndexThatImg: function (genericIndex) {
       this.imgIndex = genericIndex;
     },
+    // autoplay del carosello
+    autoPlay: function() {
+      var autoplayInterval = setInterval(function() {
+        app.nextImg();
+      }, 4000);
+
+      return autoplayInterval;
+    }
   },
+  created: function() {
+  this.autoPlay();
+  }
 });
