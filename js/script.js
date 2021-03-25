@@ -42,6 +42,6 @@ const app = new Vue ({
     }
   },
   created: function() {
-  this.autoPlay();
+    this.autoPlay();
   }
 });
