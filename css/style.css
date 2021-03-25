@@ -19,10 +19,13 @@
   align-items: center;
 }
 
+
+/* immagini */
 .carousel_container .img_container {
   height: 100%;
   width: 700px;
   margin: 0 50px;
+  position: relative;
 }
 
 .carousel_container .img_container img {
@@ -32,8 +35,26 @@
   object-position: center;
 }
 
+
+/* frecce */
 .carousel_container .arrow_container i {
   font-size: 45px;
   cursor: pointer;
   color: #008080;
+}
+
+/* bullets */
+.bullets_container {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+
+.bullets_container i {
+  color: lightgrey;
+  margin: 7px;
 }
