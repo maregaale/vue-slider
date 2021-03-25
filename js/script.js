@@ -11,11 +11,20 @@ const app = new Vue ({
 
   },
   methods: {
+    // scorrimento immagini in avanti
     nextImg: function () {
       this.imgIndex++;
 
-      if (this.imgIndex == this.images.length) {
+      if ( this.imgIndex == this.images.length ) {
         this.imgIndex = 0;
+      }
+    },
+    // scorrimento immagini indietro
+    prevImg: function () {
+      this.imgIndex--;
+
+      if ( this.imgIndex < 0 ) {
+        this.imgIndex = ( this.images.length - 1 );
       }
     },
   },
