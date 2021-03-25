@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Mix */
+#root {
+  height: 100vh;
+  width: auto;
+  background-color: lightgrey;
+  display: flex;
+}
+
+.carousel_container {
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.carousel_container .img_container {
+  background-color: red;
+  height: 100%;
+  width: 800px;
+  margin: 0 50px;
+}
+
+.carousel_container .arrow_container i {
+  font-size: 45px;
+  cursor: pointer;
+  color: #008080;
+}
