@@ -58,3 +58,7 @@
   color: lightgrey;
   margin: 0 15px;
 }
+
+.bullets_container i.bullet_colored {
+  color: #000080;
+}

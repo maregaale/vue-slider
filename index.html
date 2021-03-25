@@ -40,7 +40,7 @@
 
           <!-- bullets -->
           <div class="bullets_container">
-            <i class="fas fa-circle" v-for="item in images"></i>
+            <i class="fas fa-circle" v-for="(item,index) in images" :class="(index == imgIndex) ? classBulletColored : null"> </i>
           </div>
           <!-- /bullets -->
         </div>

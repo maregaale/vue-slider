@@ -8,6 +8,7 @@ const app = new Vue ({
       "img/vendee_globe.jpg",
     ],
     imgIndex: 0,
+    classBulletColored: "bullet_colored",
 
   },
   methods: {
@@ -27,5 +28,8 @@ const app = new Vue ({
         this.imgIndex = ( this.images.length - 1 );
       }
     },
+
+
+
   },
 });
