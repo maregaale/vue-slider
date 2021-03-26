@@ -9,6 +9,7 @@ const app = new Vue ({
     ],
     imgIndex: 0,
     classBulletColored: "bullet_colored",
+    auto: null
 
   },
   methods: {
@@ -32,16 +33,18 @@ const app = new Vue ({
     thatIndexThatImg: function (genericIndex) {
       this.imgIndex = genericIndex;
     },
-    // autoplay del carosello
-    autoPlay: function() {
-      var autoplayInterval = setInterval(function() {
-        app.nextImg();
-      }, 4000);
-
-      return autoplayInterval;
-    }
+    // stop autoplay con next
+    stopAutoplayNext: function () {
+      this.nextImg();
+      clearInterval(this.auto);
+    },
+    // stop autoplay con prev
+    stopAutoplayPrev: function () {
+      this.prevImg();
+      clearInterval(this.auto);
+    },
   },
   created: function() {
-    this.autoPlay();
-  }
+    this.auto = setInterval(this.nextImg, 4000);
+  },
 });
